@@ -7,7 +7,7 @@ function playSound(tecla) {
   key.classList.add("playing");
 }
 function removeTransition(tecla) {
-  if (tecla.propertyName !== "transform") return;
+  // if (tecla.propertyName !== "transform") return;
   this.classList.remove("playing");
 }
 
@@ -15,3 +15,4 @@ const keys = document.querySelectorAll(".key");
 
 keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
 window.addEventListener("keydown", playSound);
+window.addEventListener("keydown", dobleCheck);
