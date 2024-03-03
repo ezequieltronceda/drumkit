@@ -7,7 +7,6 @@ function playSound(tecla) {
   key.classList.add("playing");
 }
 function removeTransition(tecla) {
-  // if (tecla.propertyName !== "transform") return;
   this.classList.remove("playing");
 }
 
